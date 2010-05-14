@@ -1,0 +1,16 @@
+; $Id: garland.info,v 1.5 2007/07/01 23:27:32 goba Exp $
+name = Sevenland
+description = This theme is a mashup of the Original Drupal 6 Garland Theme and The Seven theme, so you can add a nice admin layout to your back end without going to crazy.
+version = VERSION
+core = 6.x
+engine = phptemplate
+stylesheets[all][] = style.css
+
+;Alt Admin CSS
+stylesheets[all][] = alt.admin.css
+
+stylesheets[print][] = print.css
+
+regions[content] = Content
+regions[header] = Header
+

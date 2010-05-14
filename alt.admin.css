@@ -1,0 +1,633 @@
+/**
+ * This lovely code was made from the Seven theme, and the pretty.css
+ * I just took the parts out that seem to break Drupal 6, or are... hinky looking
+ * @todo test for IE678
+ */
+
+/**
+ * Drupal Elements
+ */
+#wrapper #container #header h1, #wrapper #container #header h1 a:link, #wrapper #container #header h1 a:visited {
+  line-height:100px;
+}
+
+h2.with-tabs {
+  font-size:2.4em;
+}
+
+#wrapper #container .breadcrumb a {
+  font-size:1.1em;
+  text-transform:uppercase;
+  text-decoration:none;
+}
+
+#wrapper #container .breadcrumb span.active-trail a {
+  color:#494949;
+  font-weight:bold;
+}
+
+ul.primary li.active a, ul.primary li.active a:link, ul.primary li.active a:visited, ul.primary li a:hover, ul.secondary li.active a, ul.secondary li.active a:link, ul.secondary li.active a:visited, ul.secondary li a:hover {
+  -moz-border-radius:8px 8px 0 0;
+  border-color:#A6A7A2 #A6A7A2 #FFFFFF !important;
+  border-style:solid;
+  border-width:1px;
+  color:#000000;
+  font-weight:bold;
+  padding:0 8px 2px;
+  background:none;
+}
+
+/**
+ * Tabs.
+ */
+ul.primary {
+  float: right;
+  border-bottom: none;
+  margin: 0 0 -10px 0;
+  padding: 3px 0 0 8px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+ul.primary li {
+  display: inline;
+  list-style: none;
+}
+
+ul.primary li a,
+ul.primary li a.active,
+ul.primary li a:active,
+ul.primary li a:visited,
+ul.primary li a:hover {
+  background:none;
+  background-color: #a6a7a2;
+  -moz-border-radius: 8px 8px 0 0;
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-radius: 8px 8px 0 0;
+  color: #000;
+  font-weight: bold;
+  padding:0 8px 3px;
+  border-width: 1px 1px 0 1px;
+  border-style: solid;
+  border-color: #a6a7a2;
+}
+
+ul.primary li a:hover {
+  -moz-border-radius:8px 8px 0 0;
+  border-color:#A6A7A2 #A6A7A2 #A6A7A2;
+  border-style:solid;
+  border-width:1px;
+  color:#000000;
+  font-weight:bold;
+  padding:0 8px 2px;
+}
+
+ul.primary li.active a,
+ul.primary li.active a.active,
+ul.primary li.active a:active,
+ul.primary li.active a:visited {
+  border-color: #c9cac4;
+}
+
+ul.primary li a:hover {
+  color: #fff;
+}
+
+ul.primary li.active a:hover {
+  color: #000;
+}
+
+ul.secondary {
+  float: none;
+  clear: both;
+  font-size: 12px;
+  text-align: right;
+  padding: 5px 10px 4px;
+  line-height: 20px;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+}
+
+ul.secondary li {
+  padding-left: 10px;
+}
+
+ul.secondary li a {
+  color: #05a;
+}
+
+ul.secondary li a,
+ul.secondary li a:hover,
+ul.secondary li.active a,
+ul.secondary li.active a.active {
+  padding: 0 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 7px;
+}
+
+ul.secondary li.active a,
+ul.secondary li.active a.active {
+  color: #fff;
+  background: #666;
+}
+
+#tabs-wrapper {
+  border-bottom:1px solid #CCCCCC !important;
+}
+
+/**
+ * Tables.
+ */
+table {
+  width: 100%;
+  font-size: 12px;
+  margin: 0 0 10px;
+  border: 1px solid #bebfb9;
+  border-top: 0;
+}
+
+table.system-status-report th,
+table td,
+table th {
+  vertical-align: middle;
+  padding: 8px 5px 8px 10px;
+}
+
+table.system-status-report th {
+  padding-left: 30px;
+}
+
+table.system-status-report tr.ok > * {
+  background-color: #dfd;
+}
+
+table.system-status-report tr.info > * {
+  background-color: #bdf;
+}
+
+table.system-status-report tr.warning > * {
+  background-color: #ffd;
+}
+
+table.system-status-report tr.error > * {
+  background-color: #fdd;
+}
+
+tr.even, tr.odd {
+  border-width: 0 1px 0 1px;
+  border-style: solid;
+  border-color: #bebfb9;
+  background: #f3f4ee;
+}
+
+tr.odd {
+  background: #fff;
+}
+
+table th {
+  font-size: 12px;
+  text-transform: uppercase;
+  background: #e1e2dc;
+  font-weight: normal;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #bebfb9;
+  padding: 3px 3px 3px 10px;
+}
+
+table th.active {
+  background: #bdbeb9;
+}
+
+table th a {
+  display: block;
+  position: relative;
+}
+
+table th.active img {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+
+table td.active {
+  background: #e9e9dd;
+}
+
+table tr.odd td.active {
+  background: #f3f4ee;
+}
+
+table tr.selected td.active,
+table tr.selected td {
+  background: #ffc;
+  border-color: #eeb;
+}
+
+/**
+ * Forms.
+ */
+
+/* Fieldsets & Form items */
+fieldset {
+  border: 1px solid #ccc;
+  padding: 30px 13px 13px 14px;
+  margin: 0 0 10px;
+}
+
+fieldset legend span,
+fieldset legend a {
+  position: absolute;
+  margin-top: 9px;
+  margin-left: 13px;
+}
+
+fieldset legend a span {
+  position: relative;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+fieldset.collapsed {
+  background: transparent;
+}
+
+html.js fieldset.collapsed legend,
+html.js fieldset.collapsed legend * {
+  display: block;
+}
+html.js fieldset.collapsed {
+  border-width: 1px;
+  margin-bottom: 10px;
+  padding: 13px;
+}
+
+fieldset fieldset {
+  background: #fff;
+}
+
+fieldset fieldset fieldset {
+  background: #f8f8f8;
+}
+
+html.js fieldset.collapsible .fieldset-wrapper {
+  overflow: visible;
+}
+
+div.form-item {
+  padding: 9px 0;
+  margin: 0 0 10px;
+}
+
+.filter-wrapper div.form-item,
+div.teaser-checkbox div.form-item,
+div.form-item div.form-item,
+fieldset div.form-item {
+  padding: 5px 0;
+  margin: 0;
+  border: 0;
+}
+
+.text-format-wrapper .form-item {
+  padding-bottom: 0;
+}
+
+div.form-item label {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset legend {
+  text-transform: uppercase;
+}
+
+div.form-item label.option {
+  text-transform: none;
+}
+
+div.form-item label.option {
+  font-size: 12px;
+}
+div.form-item label.option input {
+  vertical-align: middle;
+}
+
+/* Filter */
+.filter-wrapper {
+  border-top: 0;
+  width: 95%;
+  padding: 10px 2px;
+}
+
+.filter-wrapper > div {
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+.filter-wrapper div.form-item,
+.filter-wrapper .filter-guidelines,
+.filter-wrapper .filter-help {
+  font-size: 12px;
+  padding: 0;
+}
+
+ul.tips,
+div.description,
+div.form-item div.description {
+  margin: 5px 0;
+  line-height: 15px;
+  font-size: 12px;
+  color: #666;
+}
+
+body div.form-type-radio div.description, body div.form-type-checkbox div.description {
+  margin-left: 1.5em;
+}
+
+/* Buttons */
+input.form-submit, a.button {
+  cursor: pointer;
+  padding: 4px 17px;
+  color: #5a5a5a;
+  text-align: center;
+  font-weight: normal;
+  font-family: "Lucida Grande", Verdana, sans-serif;
+  border: 1px solid #e4e4e4;
+  border-bottom: 1px solid #b4b4b4;
+  border-left-color: #D2D2D2;
+  border-right-color: #D2D2D2;
+  background: url(../images/buttons.png) 0 0 repeat-x;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 15px;
+  font-size: 1.1em;
+}
+
+a.button:link, a.button:visited, a.button:hover, a.button:active {
+  text-decoration: none;
+  color: #5a5a5a;
+}
+
+div.node-form input#edit-submit,
+div.node-form input#edit-submit-1 {
+  border: 1px solid #8eB7cd;
+  border-left-color: #8eB7cd;
+  border-right-color: #8eB7cd;
+  border-bottom-color: #7691a2;
+  background: url(../images/buttons.png) 0px -40px repeat-x;
+  color: #133B54;
+}
+
+input.form-submit:active {
+  background: #666;
+  color: #fff;
+  border-color: #555;
+  text-shadow: #222 0px -1px 0px;
+}
+
+form input#edit-delete {
+  background: #eee;
+  border-color: #fff #ddd #ccc;
+  text-shadow: none;
+  color: #999;
+}
+
+input.form-autocomplete,
+input.form-text,
+textarea.form-textarea,
+select.form-select {
+  padding: 2px;
+  border: 1px solid #ccc;
+  border-top-color: #999;
+  background: #fff;
+  color: #333;
+}
+
+input.form-text:focus,
+textarea.form-textarea:focus,
+select.form-select:focus {
+  color: #000;
+  border-color: #ace;
+}
+
+.resizable-textarea .grippie {
+  width: 100%; 
+  padding: 0 2px;
+}
+
+html.js input.form-autocomplete {
+  background-position: 100% 4px;
+}
+
+html.js input.throbbing {
+  background-position: 100% -16px;
+}
+
+/**
+ * System.
+ */
+div.admin .right,
+div.admin .left {
+  width: 49%;
+  margin: 0;
+}
+
+div.admin-panel,
+div.admin-panel .body {
+  padding: 0;
+  clear: left;
+}
+
+div.admin-panel {
+  margin: 0 0 20px;
+  padding: 9px;
+  background: #f8f8f8;
+  border: 1px solid #ccc;
+}
+
+#page div.admin-panel h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 9px;
+}
+
+.container-inline fieldset {
+  display: block;
+}
+
+/* admin/appearance */
+#page #system-themes-page h2 {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+#page .theme-selector h3 {
+  font-weight: normal;
+}
+#page .theme-default h3 {
+  font-weight: bold;
+}
+#page .system-themes-list-enabled .theme-selector h3 {
+  margin-top: 0;
+}
+
+/* admin/content and admin/people */
+#page dl.multiselect,
+#page dl.multiselect dt,
+#page dl.multiselect dd {
+  margin: 0 10px 0 0;
+}
+
+#page dl.multiselect select {
+  font-size: 12px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+/* Update options. */
+div.admin-options {
+  background: #f8f8f8;
+  line-height: 30px;
+  height: 30px;
+  padding: 9px;
+  border: 1px solid #ccc;
+  margin: 0 0 10px;
+}
+
+div.admin-options label {
+  text-transform: uppercase;
+  font: 12px/30px Lucida Grande, Lucida Sans Unicode, sans-serif;
+}
+
+div.admin-options label,
+div.admin-options div.form-item {
+  margin-right: 10px;
+  float: left;
+}
+
+div.admin-options div.form-item {
+  padding: 0;
+  border: 0;
+}
+
+/* Update status */
+.versions table.version {
+  border: none;
+}
+
+div.admin-panel {
+background: #fff;
+border:1px solid #E9E9E9;
+margin-bottom:10px
+}
+
+div.admin-panel h3 {
+  font-size:1em;
+  font-weight:bold;
+}
+
+div.admin-panel a {
+  color:#08aaf7;
+  font-size:1.2em;
+}
+
+/* Shortcut theming */
+div.add-or-remove-shortcuts {
+  float: left;
+  padding-top: 6px;
+  padding-left: 6px;
+}
+
+/* $Id: pretty.css,v 1.5 2009/12/31 03:58:44 mcrittenden Exp $ */
+
+
+/**
+ * Override of misc/vertical-tabs.css.
+ */
+div.vertical-tabs {
+  margin: 10px 0;
+  padding: 9px;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+}
+
+div.vertical-tabs fieldset {
+  border: 1px solid #CCC !important;
+  padding: 0 0 0 20px;
+  background:none;
+}
+
+div.vertical-tabs fieldset.vertical-tabs-pane {
+  min-height:550px;
+}
+
+div.vertical-tabs .vertical-tabs-list ul,
+div.vertical-tabs .vertical-tabs-list {
+  line-height: 10px;
+  font-size: 11px;
+  width: 25% !important;
+  left:0px !important;
+  float: left;
+  border: 0px solid #CCC !important;
+  margin:0 -100% -1px 1px !important;
+}
+
+div.vertical-tabs ul.vertical-tabs-list li.selected a {
+  border-right: 1px solid #FFF !important;
+}
+
+div.vertical-tabs ul li.vertical-tab-button a {
+  display: block;
+  border: 0px solid #CCC !important;
+  padding: 10px 9px 10px 10px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+}
+
+div.vertical-tabs ul li.vertical-tab-button .summary {
+  display: block;
+  font-size: 9px;
+  color: #666;
+  padding-top: 0.5em;
+}
+
+div.vertical-tabs ul li.vertical-tab-button a:hover {
+  background: #fff;
+  text-decoration: none;
+}
+
+div.vertical-tabs ul li.selected a,
+div.vertical-tabs ul li.selected a:hover {
+  background: #ddd;
+}
+
+div.vertical-tabs .vertical-tabs-panes {
+  width: 75%;
+  float: right;
+}
+
+div.vertical-tabs .vertical-tabs-panes legend {
+  display: none;
+}
+
+div.vertical-tabs ul.vertical-tabs-list li.selected {
+  border-right: 0px solid #CCC !important;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  margin-bottom:10px;
+}
+
+div.vertical-tabs ul.vertical-tabs-list li {
+  border: 1px solid #CCC !important;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  margin-bottom:10px;
+}
